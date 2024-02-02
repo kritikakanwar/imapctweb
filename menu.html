@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'mystyle.css'%}">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="menubar">
+        <div class="logo">
+            <img src="{%static 'logo.jpeg'%}" alt="websitelogo" srcset="">
+        </div>
+        <!-- <div class="searchbar">
+            <input type="text" name="searchbar" id="" placeholder="search.....">
+        </div> -->
+        <div class="menu">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="../#about">About US</a></li>
+            <li><a href="../#vertical_container">Verticals</a></li>
+            <li><a href="{%url 'Service'%}">Service</a></li>
+            <li><a href="/">Technology</a></li>
+            <li><a href="{%url 'Client'%}">Our Clients</a></li>
+            <li><a href="{%url 'Contactus'%}">Contact</a></li>
+           
+        </ul>
+    </div>
+    
+</div>
+
+{%block content%}
+
+{%endblock%}
+
+</body>
+</html>

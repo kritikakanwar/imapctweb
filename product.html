@@ -1,0 +1,22 @@
+{%load static%}
+<html>
+
+    <body>
+        {%include 'menu.html'%}
+        <div class="heading">
+        <h2>Our Services</h2>
+    </div>
+        <section class="product-container">
+            {%for i in prodobj%}
+            <div class="product-div">
+                <img src="{{i.Image.url}}" alt=""> 
+                <div class="product-info">
+                <h2>{{i.Name}}</h2>
+                <h3><a href="http://">Read More...</a></h3>
+            </div>
+            </div>
+            {%endfor%}
+                    </section>
+        {%include 'footer.html'%}
+    </body>
+</html>

@@ -1,0 +1,82 @@
+{%load static%}
+<html>
+    <title>Verticals</title>
+    <head>
+        <link rel="stylesheet" href="{% static 'mystyle.css'%}">
+    </head>
+    <body>
+        {%block content%}
+        <h2>verticals</h2>
+        <section id="vertical_container">
+            
+            <div class="vertical_img show-animate left-slide">
+                <a href="contact.html" target="_blank"><img class="animate" src="{%static 'kia.jpeg'%}" alt=""></a>
+                <div class="border">
+                    <p class=" animate">Signage</p>
+                </div>
+            </div>
+            <div class="vertical_img right-slide">
+                <img class="animate"src="{%static 'Mahindra.jpeg'%}" alt="">
+                <div class="border">
+                    <p >Facade</p>
+                </div>
+            </div>
+            <div class="vertical_img left-slide">
+                <img class="animate" src="{%static 'IndianOil.jpeg'%}" alt="">
+                <div class="border">
+                    <p >Furniture</p>
+                </div>
+            </div>
+            <div class="vertical_img right-slide">
+                <img class="animate" src="{%static 'Kia2.jpeg'%}" alt="">
+                <div class="border">
+                    <p >Digital Display</p>
+                </div>
+            </div>
+            <div class="vertical_img left-slide">
+                <img class="animate" src="{%static 'indianoil1.jpeg'%}" alt="">
+                <div class="border">
+                    <p >Exports</p>
+                </div>
+            </div>
+            <div class="vertical_img right-slide">
+                <img class="animate" src="{%static 'Kia.jpeg'%}" alt="">
+                <div class="border">
+                    <p>Metal and eng</p>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="service counter-section">
+            <div class="info_row">
+                <div class="img">
+                    <i class="fas fa-gas-pump"></i>
+                    
+                </div>
+                <div>
+                   <!-- <h2>{{product_count}}</h2> -->
+                    <h2 class="counter">750 </h2>
+                                       <p>Filling stations</p>
+                </div>
+                
+            </div>
+            <div class="info_row">
+                <div class="img">
+                    
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h2>{{product_count}}</h2>
+                <p>Indian Projects</p>
+            </div>
+            <div class="info_row">
+                <div class="img">
+                    <i class="fas fa-car"></i>
+                </div>
+                <h2>250</h2>
+                <p>Automibile signage</p>
+            
+        </section>
+        {%endblock%}
+    </body>
+</html>
